@@ -60,18 +60,18 @@ hb:
       main_sections: # leave it empty to include all regular pages.
         - blog
     giscus:
-      repo: alimektor/alimektor.github.io
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
+      repo: Alimektor/alimektor.github.io
+      repo_id: R_kgDOLpf1sA
+      category_id: DIC_kwDOLpf1sM4CecHl
   docs:
     giscus:
-      repo: alimektor/alimektor.github.io
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
+      repo: Alimektor/alimektor.github.io
+      repo_id: R_kgDOLpf1sA
+      category_id: DIC_kwDOLpf1sM4CecHl
   content_panel:
     repo:
       service: github # github or gitlab.
-      repo: alimektor/alimektor.github.io
+      repo: Alimektor/alimektor.github.io
       branch: main
       subpath: content
   # gallery:
