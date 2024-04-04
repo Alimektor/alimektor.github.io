@@ -2,7 +2,7 @@
 title: Python
 menu:
   main:
-    weight: 2
+    weight: 3
     params:
       icon:
         vendor: mdi

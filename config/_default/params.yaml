@@ -35,6 +35,7 @@ hb:
     icon_name: "bell-fill"
     icon_vendor: "bootstrap"
   blog:
+    post_thumbnail_default: /images/thumbnail.jpg
     sidebar:
       profile:
         # title: Profile title other than site title.
