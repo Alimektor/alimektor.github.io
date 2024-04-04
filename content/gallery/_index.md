@@ -1,0 +1,10 @@
+---
+title: Gallery
+menu:
+  main:
+    weight: 100
+    params:
+      icon:
+        vendor: fas
+        name: images
+---
