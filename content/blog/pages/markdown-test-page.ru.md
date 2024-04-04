@@ -1,16 +1,16 @@
 ---
-title: "Тестовая страница Markdown"
+title: Тестовая страница Markdown
 date: 2024-04-04
-draft: true
-description: "Это страница для обзора Markdown."
+draft: false
+description: Это страница для обзора Markdown.
 noindex: false
 featured: false
 pinned: false
 categories:
-   - "Test Pages"
+  - Test Pages
 tags:
-   - pages
-images: []
+  - pages
+images: 
 lastmod: 2024-04-04
 status: none
 ---
