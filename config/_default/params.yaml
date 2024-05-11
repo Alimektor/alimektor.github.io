@@ -66,7 +66,6 @@ hb:
       category: General
       category_id: DIC_kwDOLpf1sM4CecHm
       mapping: og:title
-      theme: purple_dark
   docs:
     giscus:
       repo: alimektor/alimektor.github.io
@@ -74,7 +73,6 @@ hb:
       category: General
       category_id: DIC_kwDOLpf1sM4CecHm
       mapping: og:title
-      theme: purple_dark
   content_panel:
     repo:
       service: github # github or gitlab.
