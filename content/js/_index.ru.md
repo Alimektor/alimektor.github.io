@@ -1,23 +1,17 @@
 ---
 title: JavaScript
+type: docs
 menu:
   main:
+    identifier: js
     weight: 2
     params:
       icon:
         vendor: mdi
         name: language-javascript
----
-
----
-title: JavaScript
-menu:
-  main:
-    weight: 2
-    params:
-      icon:
-        vendor: mdi
-        name: language-javascript
+nav_icon:
+   vendor: mdi
+   name: language-javascript
 ---
 
 Несколько туториалов по JavaScript.

@@ -1,12 +1,19 @@
 ---
 title: Linux
+type: docs
 menu:
   main:
+    identifier: linux
     weight: 4
     params:
       icon:
-        vendor: mdi
         name: linux
+        vendor: mdi
+date: 2024-04-04
+lastmod: 2024-04-12
+nav_icon:
+   vendor: mdi
+   name: linux
 ---
 
-Несколько туториалов по Linux.
+Несколько туториалов по Docker.

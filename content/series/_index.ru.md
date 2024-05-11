@@ -8,4 +8,7 @@ menu:
         vendor: bs
         name: columns
       description: Серии постов
+nav_icon:
+   vendor: bs
+   name: columns
 ---

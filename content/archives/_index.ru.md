@@ -9,4 +9,7 @@ menu:
         name: archive
         color: '384955'
       description: Архивные посты
+nav_icon:
+   vendor: bs
+   name: archive
 ---

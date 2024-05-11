@@ -9,4 +9,7 @@ menu:
         name: folder
         color: orange
       description: All of categories
+nav_icon:
+   vendor: bs
+   name: folder
 ---

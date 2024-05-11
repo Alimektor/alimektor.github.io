@@ -9,4 +9,7 @@ menu:
         name: tags
         color: green
       description: All of tags
+nav_icon:
+   vendor: bs
+   name: tags
 ---

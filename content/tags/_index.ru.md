@@ -8,5 +8,8 @@ menu:
         vendor: bs
         name: tags
         color: green
-      description: Все тэги
+      description: Все теги
+nav_icon:
+   vendor: bs
+   name: tags
 ---

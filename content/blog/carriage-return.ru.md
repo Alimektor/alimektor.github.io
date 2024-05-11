@@ -6,20 +6,25 @@ noindex: false
 featured: false
 pinned: false
 series:
-  - "Bash Coding"
-  - Linux
+  - Bash
+  - Powershell
 categories:
   - Linux
+  - Windows
 tags:
   - strings
   - linux
   - shell
+  - general
+  - windows
 images: []
 authors:
   - Alimektor
-lastmod: 2024-04-04
-status: none
+lastmod: 2024-04-27
+status: final
 ---
+
+# carriage-return.ru
 
 ## Что такое возврат каретки, перевод строки и подача формы? ##
 
@@ -32,6 +37,7 @@ status: none
 ## Скрипт для удаления возврата каретки ##
 
 {{< bs/toggle carriageReturnRemove >}}
+
 {{% bs/toggle-item Bash %}}
 
 ```bash
@@ -39,6 +45,7 @@ sed -i 's/\r//g' "<filename>"
 ```
 
 {{% /bs/toggle-item %}}
+
 {{% bs/toggle-item Powershell %}}
 
 ```powershell
@@ -47,6 +54,7 @@ $path = "<filename>"
 ```
 
 {{% /bs/toggle-item %}}
+
 {{< /bs/toggle >}}
 
 ## Ссылки ##

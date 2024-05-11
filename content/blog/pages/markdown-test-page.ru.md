@@ -9,12 +9,12 @@ pinned: false
 categories:
   - Test Pages
 tags:
-  - pages
+  - general
 images: []
 authors:
   - Alimektor
 lastmod: 2024-04-04
-status: none
+status: final
 ---
 
 # Тестовая страница Markdown #

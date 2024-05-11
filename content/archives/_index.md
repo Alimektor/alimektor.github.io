@@ -9,4 +9,7 @@ menu:
         name: archive
         className: text-primary-emphasis
       description: Posts archive
+nav_icon:
+   vendor: bs
+   name: archive
 ---

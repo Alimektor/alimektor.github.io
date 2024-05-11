@@ -8,4 +8,7 @@ menu:
       icon:
         vendor: bs
         name: house
+nav_icon:
+   vendor: bs
+   name: house
 ---

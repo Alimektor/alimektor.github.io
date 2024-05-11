@@ -9,4 +9,7 @@ menu:
         name: pencil
         color: '#0f5e97'
       description: Authors list
+nav_icon:
+   vendor: bs
+   name: pencil
 ---

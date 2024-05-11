@@ -7,4 +7,7 @@ menu:
       icon:
         vendor: fas
         name: images
+nav_icon:
+   vendor: fas
+   name: images
 ---

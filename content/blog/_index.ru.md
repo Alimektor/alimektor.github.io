@@ -8,4 +8,7 @@ menu:
       icon:
         vendor: fas
         name: blog
+nav_icon:
+   vendor: bs
+   name: blog
 ---
