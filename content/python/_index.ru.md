@@ -13,4 +13,5 @@ nav_icon:
    vendor: mdi
    name: language-python
 ---
+
 Несколько туториалов по Python.
