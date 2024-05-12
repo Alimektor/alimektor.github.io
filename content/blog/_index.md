@@ -9,6 +9,6 @@ menu:
         vendor: fas
         name: blog
 nav_icon:
-   vendor: bs
+   vendor: fas
    name: blog
 ---
