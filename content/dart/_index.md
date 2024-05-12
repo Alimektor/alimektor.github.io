@@ -7,11 +7,11 @@ menu:
     weight: 7
     params:
       icon:
-        vendor: mdi
-        name: language-dart
+        vendor: simple-icons
+        name: dart
 nav_icon:
-   vendor: mdi
-   name: language-dart
+   vendor: simple-icons
+   name: dart
 ---
 
 Some tutorials about Dart.
