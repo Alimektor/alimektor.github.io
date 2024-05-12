@@ -4,7 +4,7 @@ type: docs
 menu:
   main:
     identifier: rust
-    weight: 5
+    weight: 6
     params:
       icon:
         vendor: mdi

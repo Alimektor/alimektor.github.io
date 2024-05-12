@@ -4,7 +4,7 @@ type: docs
 menu:
   main:
     identifier: dart
-    weight: 7
+    weight: 8
     params:
       icon:
         vendor: simple-icons

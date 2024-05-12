@@ -4,7 +4,7 @@ type: docs
 menu:
   main:
     identifier: linux
-    weight: 4
+    weight: 2
     params:
       icon:
         name: linux

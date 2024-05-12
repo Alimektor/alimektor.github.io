@@ -4,7 +4,7 @@ type: docs
 menu:
   main:
     identifier: js
-    weight: 2
+    weight: 5
     params:
       icon:
         vendor: mdi

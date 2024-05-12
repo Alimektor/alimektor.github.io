@@ -4,7 +4,7 @@ type: docs
 menu:
   main:
     identifier: go
-    weight: 6
+    weight: 7
     params:
       icon:
         vendor: mdi
