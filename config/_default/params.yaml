@@ -5,10 +5,10 @@ hb:
   styles:
     primary: "#7952b3"
     color: purple
-  
+
   # js_bundle_name: main # the JS bundle name.
   # css_bundle_name: main # the CSS bundle name.
-  
+
   full_width: false # when true, the layout takes full width globally.
 
   header:
@@ -62,14 +62,14 @@ hb:
         - blog
     giscus:
       repo: alimektor/alimektor.github.io
-      repo_id: R_kgDOLpf1sA
+      repo_id: R_kgDOL6A1eA
       category: General
       category_id: DIC_kwDOLpf1sM4CecHm
       mapping: og:title
   docs:
     giscus:
       repo: alimektor/alimektor.github.io
-      repo_id: R_kgDOLpf1sA
+      repo_id: R_kgDOL6A1eA
       category: General
       category_id: DIC_kwDOLpf1sM4CecHm
       mapping: og:title
