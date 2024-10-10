@@ -24,8 +24,6 @@ lastmod: 2024-04-27
 status: final
 ---
 
-# carriage-return
-
 ## What Are Carriage Return, Linefeed, and Form Feed? ##
 
 **Carriage return** means to return to the beginning of the current line without advancing downward. The name comes from a printer's carriage, as monitors were rare when the name was coined. This is commonly escaped as `\r`, abbreviated `CR`, and has ASCII value `13` or `0xD`.
