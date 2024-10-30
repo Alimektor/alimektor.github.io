@@ -1,7 +1,7 @@
 ---
 title: Alimektor
 email_hash: 32c0b1a8de4d84608e47ca1ab905015b
-description: "Just a good man."
+description: "It's not how much time you have, it's how you use it."
 socials:
     github: alimektor
     telegram: alimektor
