@@ -10,7 +10,6 @@ menu:
         name: linux
         vendor: mdi
 date: 2024-04-04
-lastmod: 2024-04-12
 nav_icon:
    vendor: mdi
    name: linux
