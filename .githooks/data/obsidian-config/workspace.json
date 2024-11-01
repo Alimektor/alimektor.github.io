@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "58bbf1937cd1909a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1e8c1de8c661cce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc103445ea086208",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c1d95cda567cb00d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e767c0a593a4592",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f381f49e6ee997c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "255172cf2dc886c6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "405760eae12667ab",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 426.5
+  },
+  "right": {
+    "id": "72ef18fb91d59597",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac3b613a06da4b30",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9b25cb8f9b3333d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "archetypes/blog.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for blog"
+            }
+          },
+          {
+            "id": "5adc8d40bc4f646b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "archetypes/blog.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from blog"
+            }
+          },
+          {
+            "id": "e50f3a5051ac89f6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9ecc95cbc729e072",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "archetypes/blog.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of blog"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false
+    }
+  },
+  "active": "bc103445ea086208",
+  "lastOpenFiles": [
+    "archetypes/blog.md",
+    "resources/_gen/assets/hb/scss/index.tmpl.scss_e95cbfbd605d284b1b863241e43b24e9.json",
+    "resources/_gen/assets/hb/scss/index.tmpl.scss_e95cbfbd605d284b1b863241e43b24e9.content",
+    "resources/_gen/assets/hb/scss",
+    "public/css/hb.css",
+    "node_modules/@fullhuman/postcss-purgecss/README.md",
+    "node_modules/@fullhuman/postcss-purgecss/package.json",
+    "node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.js",
+    "node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.esm.js",
+    "node_modules/@fullhuman/postcss-purgecss/lib/postcss-purgecss.d.ts",
+    "node_modules/@fullhuman/postcss-purgecss/lib",
+    "node_modules/@isaacs/cliui/node_modules/emoji-regex/LICENSE-MIT.txt",
+    "node_modules/@isaacs/cliui/node_modules/emoji-regex/README.md",
+    "node_modules/@isaacs/cliui/node_modules/ansi-styles/readme.md",
+    "node_modules/caniuse-lite/README.md",
+    "node_modules/@isaacs/cliui/node_modules/ansi-regex/readme.md",
+    "node_modules/@isaacs/cliui/node_modules/string-width/readme.md",
+    "node_modules/@isaacs/cliui/README.md",
+    "node_modules/@isaacs/cliui/node_modules/wrap-ansi/readme.md",
+    "node_modules/@isaacs/cliui/node_modules/strip-ansi/readme.md",
+    "node_modules/@nodelib/fs.scandir/README.md",
+    "node_modules/@nodelib/fs.stat/README.md",
+    "node_modules/@pkgjs/parseargs/README.md",
+    "node_modules/cliui/README.md",
+    "node_modules/chokidar/README.md",
+    "node_modules/@pkgjs/parseargs/CHANGELOG.md",
+    "node_modules/cliui/CHANGELOG.md",
+    "node_modules/@nodelib/fs.walk/README.md",
+    "node_modules/@sindresorhus/merge-streams/readme.md",
+    "node_modules/ansi-regex/readme.md",
+    "node_modules/braces/README.md",
+    "node_modules/braces/CHANGELOG.md",
+    "node_modules/anymatch/README.md",
+    "node_modules/ansi-styles/readme.md",
+    "node_modules/binary-extensions/readme.md",
+    "node_modules/brace-expansion/README.md",
+    "public/images/logo_hu10796156245596251524.png",
+    "resources/_gen/images/images/logo_hu10796156245596251524.png",
+    "public/images/thumbnail_hu2298418190487840073.cef7eefc3c2ff604cf25cd7d5567b6ee.jpg",
+    "public/images/thumbnail_hu9976708813605697732.webp",
+    "public/images/logo_hu5154609255583253167.f98b7ee60909350f255e94d16d9b2d44.png",
+    "public/images/logo_hu144255110416014532.webp",
+    "resources/_gen/images/images/logo_hu144255110416014532.webp",
+    "resources/_gen/images/images/thumbnail_hu9976708813605697732.webp",
+    "resources/_gen/images/images/logo_hu5154609255583253167.png",
+    "public/images/logo.5c19f96c020f6740cd97fa9ff4fc37de.png"
+  ]
+}

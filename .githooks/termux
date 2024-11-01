@@ -1,0 +1,7 @@
+#!/usr/bin/env -S bash -e
+# run termux hooks for the current Git repository.
+
+bash -e ./.githooks/pre-commit
+bash -e ./.githooks/prepare-commit-msg
+bash -e ./.githooks/commit-msg
+bash -e ./.githooks/post-commit

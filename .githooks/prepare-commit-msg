@@ -1,0 +1,7 @@
+#!/usr/bin/env -S bash -e
+# prepare-commit-msg hook for the current Git repository.
+
+# shellcheck source=lib/functions
+. ./.githooks/lib/functions
+
+print_info "Try to commit your changes."

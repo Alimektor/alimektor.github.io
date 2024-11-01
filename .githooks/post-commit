@@ -1,0 +1,19 @@
+#!/usr/bin/env -S bash -e
+# post-commit hook for the current Git repository.
+
+# shellcheck source=lib/functions
+. ./.githooks/lib/functions
+
+git_sync_push() {
+    print_info "Try to push your changes."
+    if ! git push --all origin; then
+        print_fail "Something went wrong when you uploaded your changes."
+    fi
+    print_okay "Push is complete."
+}
+
+print_okay "${git_username}, the ${warning_color}${git_sync_repo_basename}${success_color} Git repository has been committed!"
+
+git_sync_push
+
+print_okay "${git_username}, the ${warning_color}${git_sync_repo_basename}${success_color} Git repository has been updated!"

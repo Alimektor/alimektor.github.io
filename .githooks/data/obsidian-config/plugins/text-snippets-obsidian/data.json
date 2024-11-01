@@ -1,0 +1,24 @@
+{
+  "snippets_file": "red : <span style=\"color:red\">$end$</span>\ngreen : <span style=\"color:green\">$end$</span>\nblue : <span style=\"color:blue\">$end$</span>\ncolor : <span style=\"color:$end$\">$end$</span>\nOK :  <span style=\"color:green\">OK</span>\nOKAY : <span style=\"color:green\">OKAY</span>\nPASS : <span style=\"color:green\">PASS</span>\nFAIL : <span style=\"color:red\">FAIL</span>\nto : →\nkbd : <kbd>$end$</kbd>\nins : <ins>$end$</ins>",
+  "snippets": [
+    "red : <span style=\"color:red\">$end$</span>",
+    "green : <span style=\"color:green\">$end$</span>",
+    "blue : <span style=\"color:blue\">$end$</span>",
+    "color : <span style=\"color:$end$\">$end$</span>",
+    "OK :  <span style=\"color:green\">OK</span>",
+    "OKAY : <span style=\"color:green\">OKAY</span>",
+    "PASS : <span style=\"color:green\">PASS</span>",
+    "FAIL : <span style=\"color:red\">FAIL</span>",
+    "to : →",
+    "kbd : <kbd>$end$</kbd>",
+    "ins : <ins>$end$</ins>"
+  ],
+  "endSymbol": "$end$",
+  "newlineSymbol": "$nl$",
+  "stopSymbol": "$tb$",
+  "pasteSymbol": "$pst$",
+  "useTab": false,
+  "useSpace": true,
+  "wordDelimiters": "$()[]{}<>,.!?;:'\"\\/",
+  "isWYSIWYG": true
+}
