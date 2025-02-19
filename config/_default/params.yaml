@@ -1,0 +1,131 @@
+description: Watch. Read. Run. Repeat.
+
+hb:
+  # override SASS variables, please replace the dash with underline, e.g. `list-group-color` should be `list_group_color`.
+  styles:
+    primary: "#7952b3"
+    color: purple
+
+  # js_bundle_name: main # the JS bundle name.
+  # css_bundle_name: main # the CSS bundle name.
+
+  full_width: false # when true, the layout takes full width globally.
+
+  header:
+    brand: # the brand name, leave it empty to use site's title.
+    logo_bg: '#712cf9' # logo background color, used by logo with transparent background.
+    # see https://hbstack.dev/en/docs/modules/socials/.
+    socials:
+      github: alimektor
+      telegram: alimektor
+  footer:
+    # see https://hbstack.dev/en/docs/modules/socials/.
+    socials:
+      _color: false # when false, remove the color of social icons.
+      github: alimektor
+      telegram: alimektor
+    powered_by: false
+  terms:
+    # the paginate for categories, tags, series list pages.
+    paginate: 12
+  news:
+    sections: ["blog"]
+    limit: 5
+    date_format: ":date_full"
+    icon_name: "bell-fill"
+    icon_vendor: "bootstrap"
+  blog:
+    post_thumbnail_default: /images/thumbnail.jpg
+    sidebar:
+      profile:
+        # title: Profile title other than site title.
+        # description: Profile description other than site description.
+        company: World's Best Company
+        location: Ask Me First
+        socials:
+          github: alimektor
+          telegram: alimektor
+          email: alimektor@gmail.com
+      posts:
+        recent_count: 5 # the number of recent posts.
+        featured_count: 5 # the number of featured posts.
+      taxonomies:
+        count: true # whether to show the number of posts associated to the item.
+        limit: 10 # the maximum number of the item.
+    paginate: 12 # paginate.
+    # post_thumbnail_placeholder: HB THEME # the text of thumbnail placeholder, default to site title.
+    # post_thumbnail: false # whether to show the thumbnails.
+    # post_date_format: ":date_long" # see https://gohugo.io/functions/dateformat/#datetime-formatting-layouts.
+    home: # homepage settings.
+      # taxonomies: false # remove the taxonomies stat from the homepage.
+      featured_posts: 5 # the number of the featured posts.
+      main_sections: # leave it empty to include all regular pages.
+        - blog
+    giscus:
+      repo: alimektor/alimektor.github.io
+      repo_id: R_kgDOL6A1eA
+      category: General
+      category_id: DIC_kwDOLpf1sM4CecHm
+      mapping: og:title
+  docs:
+    giscus:
+      repo: alimektor/alimektor.github.io
+      repo_id: R_kgDOL6A1eA
+      category: General
+      category_id: DIC_kwDOLpf1sM4CecHm
+      mapping: og:title
+  content_panel:
+    repo:
+      service: github # github or gitlab.
+      repo: Alimektor/alimektor.github.io
+      branch: main
+      # subpath: content
+  # gallery:
+  #   thumbnail_size: "x640"
+
+seo:
+  favicons: # see https://hugomods.com/en/docs/seo/#favicons-module
+    icon: images/logo.png # use logo as favicon.
+
+# PWA settings, see https://hugomods.com/en/docs/pwa/#site-parameters.
+pwa:
+  debug: false
+  manifest:
+    background_color: '#712cf9'
+    theme_color: '#712cf9'
+    short_name: 'アリメクタ'
+
+# see https://hugomods.com/search/configurations/.
+search:
+  stall_threshold: 300
+  min_match_char_length: 2
+  case_sensitive: false
+  # shortcut_search: ["/"]
+
+mermaid:
+  # replace it with other CDNs or self-hosted URLs.
+  js_url: https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs
+
+hugopress:
+  modules:
+    hb-custom:
+      hooks:
+        # see layouts/partials/hugopress/modules/hb-custom/hooks/head-end.html.
+        head-end:
+          cacheable: true
+        # see layouts/partials/hugopress/modules/hb-custom/hooks/body-end.html.
+        body-end:
+          cacheable: true
+        # see layouts/partials/hugopress/modules/hb-custom/hooks/hb-blog-sidebar.html.
+        hb-blog-sidebar:
+          cacheable: true
+          weight: 1
+    # change the order of sidebar modules.
+    hb-blog-sidebar-taxonomies:
+      hooks:
+        hb-blog-sidebar:
+          weight: 3
+    hb-blog-sidebar-posts:
+      hooks:
+        hb-blog-sidebar:
+          weight: 2
