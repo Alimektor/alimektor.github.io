@@ -24,6 +24,7 @@ defaults:
 
 jobs:
   build:
+    # Must runs on Ubuntu, since this workflow use snap to install Dart Sass.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -39,6 +40,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
+
+      - name: Setup Dart Sass
+        run: sudo snap install dart-sass && sudo snap alias dart-sass sass
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -74,4 +78,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
