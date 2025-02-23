@@ -1,9 +1,16 @@
+UPDATE_SCRIPT := update-hugo-posts
+UPDATE_SCRIPT_EXISTS := $(shell which $(UPDATE_SCRIPT) 2>/dev/null)
+
 .PHONY: all docker run help
 
 all: docker run
 
 docker: ## Build docker image
 	$(info "Building docker image...")
+ifdef UPDATE_SCRIPT_EXISTS
+	$(info "Updating hugo posts...")
+	$(UPDATE_SCRIPT)
+endif
 	docker build \
 	-t alimektor/alimektor.github.io:latest \
 	--build-arg HUGO_BASEURL=http://localhost:1338 \
