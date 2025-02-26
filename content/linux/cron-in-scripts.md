@@ -11,7 +11,7 @@ tags:
 - bash
 - automation
 categories:
-- linux
+- Linux
 images: []
 authors:
 - Alimektor
