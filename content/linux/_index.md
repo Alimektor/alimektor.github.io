@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Linux
 type: docs
 menu:
@@ -13,6 +13,6 @@ date: 2024-04-04
 nav_icon:
    vendor: mdi
    name: linux
----
+--- -->
 
 Some tutorials about Linux.
