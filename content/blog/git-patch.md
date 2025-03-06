@@ -1,5 +1,6 @@
 ---
 title: Git Patch
+date: '2025-03-05'
 description: Git patches are text files that contain code and Git commit metadata.
 noindex: false
 featured: false

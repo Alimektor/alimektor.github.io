@@ -6,6 +6,7 @@ defaultContentLanguageInSubdir: false # disable this to remove the default langu
 enableRobotsTXT: true
 timeout: 120s # images processing takes a long time, it's recommended to commit the resources folder for improve the build performance.
 enableEmoji: true
+enableGitInfo: true
 
 title_sections: true # when false, remove the sections from the title.
 title_sections_depth: 0 # the depth of sections on the title.

@@ -1,5 +1,6 @@
 ---
 title: Shebang
+date: '2025-03-03'
 description: How to Use Shebang in Scripts?
 noindex: false
 featured: false

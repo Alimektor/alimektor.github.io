@@ -1,5 +1,6 @@
 ---
 title: Cron in Scripts
+date: '2025-03-01'
 description: How to Pass a Task to cron From a Script?
 noindex: false
 featured: false
