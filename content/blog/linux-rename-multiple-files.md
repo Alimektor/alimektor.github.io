@@ -1,6 +1,6 @@
 ---
 title: How to Rename Multiple Files in Linux
-date: '2025-03-06'
+date: '2025-03-07'
 description: This post about how to rename multiple files in Linux will provide you
   with a step-by-step guide on how to rename multiple files in Linux using the `mv`
   command.
