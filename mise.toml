@@ -1,0 +1,62 @@
+[tools]
+zola = "0.19"
+
+[env]
+_.file = ".env"
+
+[tasks.serve]
+description = "Start the Zola development server"
+run = "zola serve"
+
+[tasks.build]
+description = "Build the site for production"
+run = "zola build"
+
+[tasks.check]
+description = "Check the site for errors without building"
+run = "zola check"
+
+[tasks.new]
+description = "Create a new blog post"
+run = """
+#!/usr/bin/env bash
+if [ -z "$1" ]; then
+  echo "Usage: mise run new <blog post-slug>"
+  exit 1
+fi
+SLUG="$1"
+DATE=$(date +%Y-%m-%d)
+FILE="content/blog/${SLUG}.md"
+cat > "$FILE" << BLOGPOST
++++
+title = ""
+date = ${DATE}
+description = ""
+[taxonomies]
+tags = []
+categories = []
+[extra]
+author = "Alimektor"
++++
+
+BLOGPOST
+echo "Created $FILE"
+"""
+
+[tasks.dev-build]
+description = "Build the site for development with asset processing"
+run = [
+  "mise run assets",
+  "zola build"
+]
+
+[tasks.convert-images]
+description = "Convert source images from static/src to AVIF format"
+run = "mise run convert-images"
+
+[tasks.clean]
+description = "Remove the public directory and converted assets"
+run = [
+  "rm -rf public",
+  "find static -name '*.avif' -type f -delete"
+]

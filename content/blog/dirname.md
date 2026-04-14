@@ -1,22 +1,17 @@
 ---
 title: The dirname command in Bash
-date: '2025-03-04'
-description: dirname is a UNIX-like OS program designed to convert an absolute or
+date: 2025-03-06
+description: >-
+  `dirname` is a UN IX-like OS program designed to convert an absolute or
   relative path to a file or directory into the name of the parent directory.
-noindex: false
-featured: false
-pinned: false
-series:
-- Scripting
-tags:
-- linux
-- bash
-categories:
-- Linux
-images: []
-authors:
-- Alimektor
-status: final
+taxonomies:
+  tags:
+    - bash
+    - linux
+  categories:
+    - Linux
+extra:
+  author: Alimektor
 ---
 
 

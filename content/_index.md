@@ -1,14 +1,9 @@
----
-title: アリメクタ's Blog
-menu:
-  main:
-    name: Home
-    weight: 1
-    params:
-      icon:
-        vendor: bs
-        name: house
-nav_icon:
-   vendor: bs
-   name: house
----
++++
+title = "Home"
++++
+
+Hello,  my name is Eugeny "Alimektor" Ognev.
+
+This is my Official Website.
+
+I am a Geek by Numbers, an Otaku by Nature and a Philosopher at Heart.

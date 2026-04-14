@@ -1,0 +1,59 @@
+base_url = "https://alimektor.github.io"
+title = "Alimektor"
+description = "This is a story not about how much time you have, it's about how you use it."
+default_language = "en"
+compile_sass = true
+minify_html = true
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+build_search_index = true
+
+taxonomies = [
+    { name = "tags", feed = true },
+    { name = "categories", feed = true },
+    { name = "series", feed = true },
+]
+
+[markdown]
+smart_punctuation = true
+render_emoji = false
+external_links_target_blank = true
+external_links_no_follow = false
+external_links_no_referrer = false
+insert_anchor_links = "none"
+
+[markdown.highlighting]
+enabled = true
+theme = "nord"
+extra_syntaxes_and_themes = ["syntaxes"]
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+
+[extra]
+site_name = "Alimektor | Watch. Read. Run. Repeat"
+author = "Alimektor"
+favicon = "logo.avif"
+logo = "logo.avif"
+color_scheme_toggle = true
+default_color_scheme = "auto"
+max_category_to_show = 10
+enable_footnotes = true
+comments_enabled = false
+
+# SEO metadata
+keywords = "platform automation, edge systems, applied security, open standards, Rust, DevOps, infrastructure"
+og_image = "og-default.png"
+
+[extra.social]
+github = "https://github.com/alimektor"
+# linkedin = "https://ch.linkedin.com/in/alimektor"
+# twitter = "https://twitter.com/alimektor"

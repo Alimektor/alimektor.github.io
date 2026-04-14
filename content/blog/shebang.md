@@ -1,22 +1,16 @@
 ---
 title: Shebang
-date: '2025-03-03'
-description: How to Use Shebang in Scripts?
-noindex: false
-featured: false
-pinned: false
-series:
-- Scripting
-tags:
-- linux
-- bash
-- coding
-categories:
-- Linux
-images: []
-authors:
-- Alimektor
-status: final
+date: 2025-03-03
+description: "How to Use Shebang in Scripts?"
+taxonomies:
+  tags:
+    - bash
+    - linux
+    - coding
+  categories:
+    - Linux
+extra:
+  author: Alimektor
 ---
 
 

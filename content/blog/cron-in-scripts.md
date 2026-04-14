@@ -1,22 +1,16 @@
 ---
 title: Cron in Scripts
-date: '2025-03-01'
-description: How to Pass a Task to cron From a Script?
-noindex: false
-featured: false
-pinned: false
-series:
-- Automation
-tags:
-- linux
-- bash
-- automation
-categories:
-- Linux
-images: []
-authors:
-- Alimektor
-status: final
+date: 2025-03-01
+description: "How to Pass a Task to cron From a Script?"
+taxonomies:
+  tags:
+    - bash
+    - linux
+    - automation
+  categories:
+    - Linux
+extra:
+  author: Alimektor
 ---
 
 

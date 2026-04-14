@@ -1,23 +1,17 @@
 ---
 title: Git Patch
-date: '2025-03-05'
+date: 2025-03-05
 description: Git patches are text files that contain code and Git commit metadata.
-noindex: false
-featured: false
-pinned: false
-series:
-- Scripting
-tags:
-- linux
-- git
-- vcs
-categories:
-- Linux
-- Git
-images: []
-authors:
-- Alimektor
-status: final
+taxonomies:
+  tags:
+    - linux
+    - git
+    - vcs
+  categories:
+    - Linux
+    - Git
+extra:
+  author: Alimektor
 ---
 
 

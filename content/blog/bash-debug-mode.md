@@ -1,23 +1,18 @@
 ---
 title: Debug Mode in Bash
-date: '2025-03-06'
-description: Debug mode in Bash is a useful feature that allows you to trace the execution
-  of a script, helping you identify errors, understand the flow, and troubleshoot
-  issues.
-noindex: false
-featured: false
-pinned: false
-series:
-- Scripting
-tags:
-- bash
-- linux
-categories:
-- Linux
-images: []
-authors:
-- Alimektor
-status: final
+date: 2025-03-06
+description: >-
+  Debug mode in Bash is a useful feature that allows you to trace the execution
+  of a script, helping you identify errors, understand the flow, and
+  troubleshoot issues.
+taxonomies:
+  tags:
+    - bash
+    - linux
+  categories:
+    - Linux
+extra:
+  author: Alimektor
 ---
 
 

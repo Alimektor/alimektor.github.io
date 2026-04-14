@@ -4,3 +4,26 @@ package-json.lock
 public/
 node_modules/
 resources/
+
+# Zola build output
+public/
+
+# Claude Code configuration
+.claude/
+
+# mise
+.mise.local.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
