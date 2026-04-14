@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Alimektor - automation</title>
+      <link>https://alimektor.github.io</link>
+      <description>This is a story not about how much time you have, it&#x27;s about how you use it.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://alimektor.github.io/tags/automation/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Cron in Scripts</title>
+          <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/cron-in-scripts/</link>
+          <guid>https://alimektor.github.io/blog/cron-in-scripts/</guid>
+          <description xml:base="https://alimektor.github.io/blog/cron-in-scripts/">&lt;h2 id=&quot;how-to-pass-a-task-to-cron-from-a-script&quot;&gt;How to Pass a Task to &lt;code&gt;cron&lt;&#x2F;code&gt; From a Script?&lt;&#x2F;h2&gt;
+&lt;p&gt;You can use the following script to do this in scripts:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;crontab -l &amp;gt; taskcron
+echo &amp;quot;* * * * * sometask&amp;quot; &amp;gt;&amp;gt; taskcron
+crontab taskcron
+rm taskcron
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+    </channel>
+</rss>

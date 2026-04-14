@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Alimektor - Linux</title>
+      <link>https://alimektor.github.io</link>
+      <description>This is a story not about how much time you have, it&#x27;s about how you use it.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://alimektor.github.io/categories/linux/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Debug Mode in Bash</title>
+          <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/bash-debug-mode/</link>
+          <guid>https://alimektor.github.io/blog/bash-debug-mode/</guid>
+          <description xml:base="https://alimektor.github.io/blog/bash-debug-mode/">&lt;p&gt;Debug mode in Bash is a useful feature that allows you to trace the execution of a script, helping you identify errors, understand the flow, and troubleshoot issues. When debug mode is enabled, Bash prints each command before executing it, along with the expanded values of variables and expressions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;debug-using-trap&quot;&gt;Debug Using Trap&lt;&#x2F;h2&gt;
+&lt;p&gt;The magic line to add after shebang so that the script can be debugged in steps:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env bash
+trap &amp;#x27;echo &amp;quot;[DEBUG]# $BASH_COMMAND&amp;quot;;read&amp;#x27; DEBUG
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;debug-process&quot;&gt;Debug Process&lt;&#x2F;h3&gt;
+&lt;p&gt;Run the script, before each command is executed the output of what will be executed, then the interpreter begins to wait for the &lt;kbd&gt;ENTER&lt;&#x2F;kbd&gt; key to be pressed.&lt;&#x2F;p&gt;
+&lt;p&gt;Если понимаем, что что-то пошло не так, нажимаем &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;C&lt;&#x2F;kbd&gt; и выходим из отладки.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;recipe&quot;&gt;Recipe&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;trap&lt;&#x2F;code&gt; command, which can intercept various signals, and in our case, it intercepts the &lt;code&gt;DEBUG&lt;&#x2F;code&gt; signal sent before executing a command.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;code&gt;read&lt;&#x2F;code&gt; command, which can wait for input from the keyboard (in this case, we only need either &lt;kbd&gt;ENTER&lt;&#x2F;kbd&gt; or &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;C&lt;&#x2F;kbd&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;The environment variable &lt;code&gt;$BASH_COMMAND&lt;&#x2F;code&gt;, which is valid inside the &lt;code&gt;trap&lt;&#x2F;code&gt; command handler.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;habr.com&#x2F;ru&#x2F;post&#x2F;666982&#x2F;&quot;&gt;How to Debug Bash-Scripts Step-By-Step or Possibly the Shortest Programming&#x2F;Debugging Article on Habr Site in Russian&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;selivan.github.io&#x2F;2022&#x2F;05&#x2F;21&#x2F;bash-debug.html&quot;&gt;Simple bash debugger using trap DEBUG on Just another IT blog Site In English&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;option-x&quot;&gt;Option &lt;code&gt;-x&lt;&#x2F;code&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The &lt;code&gt;-x&lt;&#x2F;code&gt; argument allows you to step through each line of the script in debugging mode:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;bash -x script.sh
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;&#x2F;h3&gt;
+&lt;p&gt;Here’s a good example (&lt;code&gt;cat hello.sh&lt;&#x2F;code&gt;):&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env bash
+echo &amp;quot;Hello World\n&amp;quot;
+adding_string_to_number=&amp;quot;s&amp;quot;
+v=$(expr 5 + $adding_string_to_number)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here is the output of the running program (&lt;code&gt;.&#x2F;hello.sh&lt;&#x2F;code&gt;):&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;Hello World
+
+expr: non-integer argument
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This output is not enough. However, using the debug mode (&lt;code&gt;bash -x hello.sh&lt;&#x2F;code&gt;), you can get more details:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;+ echo Hello World\n
+Hello World
++ adding_string_to_number=s
++ expr 5 + s
+expr: non-integer argument
++ v=
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+      <item>
+          <title>The dirname command in Bash</title>
+          <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/dirname/</link>
+          <guid>https://alimektor.github.io/blog/dirname/</guid>
+          <description xml:base="https://alimektor.github.io/blog/dirname/">&lt;p&gt;&lt;code&gt;dirname&lt;&#x2F;code&gt; is a UNIX-like OS program designed to convert an absolute or relative path to a file or directory into the name of the parent directory.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;syntax&quot;&gt;Syntax&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;dirname string
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;string&lt;&#x2F;code&gt; - path to file or directory&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;shell&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;$ dirname ~&amp;#x2F;tests&amp;#x2F;1.txt
+&amp;#x2F;home&amp;#x2F;alimektor&amp;#x2F;tests
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+      <item>
+          <title>How to Rename Multiple Files in Linux</title>
+          <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/linux-rename-multiple-files/</link>
+          <guid>https://alimektor.github.io/blog/linux-rename-multiple-files/</guid>
+          <description xml:base="https://alimektor.github.io/blog/linux-rename-multiple-files/">&lt;p&gt;Use the following scripts.&lt;&#x2F;p&gt;
+&lt;p&gt;Rename by pattern in current directory:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;for f in &amp;lt;pattern: *.md&amp;gt;; do mv &amp;quot;$f&amp;quot; &amp;quot;$(echo &amp;quot;$f&amp;quot; | sed s&amp;#x2F;OLDNAME&amp;#x2F;NEWNAME&amp;#x2F;)&amp;quot;; done
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Rename by search pattern recursively:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find . -name &amp;#x27;&amp;lt;pattern: *.md&amp;gt;&amp;#x27; -exec bash -c &amp;#x27;echo mv $0 ${0&amp;#x2F;OLDNAME&amp;#x2F;NEWNAME}&amp;#x27; {} \;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;6840332&#x2F;rename-multiple-files-by-replacing-a-particular-pattern-in-the-filenames-using-a&quot;&gt;Rename multiple files by replacing a particular pattern in the filenames using a shell script&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>Git Patch</title>
+          <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/git-patch/</link>
+          <guid>https://alimektor.github.io/blog/git-patch/</guid>
+          <description xml:base="https://alimektor.github.io/blog/git-patch/">&lt;p&gt;Git patches are text files that contain code and Git commit metadata.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;generate-a-git-patch-for-a-specific-commit&quot;&gt;Generate a Git Patch For a Specific Commit&lt;&#x2F;h2&gt;
+&lt;p&gt;Generate a patch for the HEAD commit:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git format-patch -1 HEAD
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Generate a patch for the HEAD commit with specified file name:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git format-patch -1 HEAD --output=head.patch
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Generate a patch for HEAD - &lt;code&gt;n&lt;&#x2F;code&gt; commits:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git format-patch -&amp;lt;n&amp;gt; HEAD
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Apply the patch with verbose:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git apply --verbose *.patch
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+      <item>
+          <title>Shebang</title>
+          <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/shebang/</link>
+          <guid>https://alimektor.github.io/blog/shebang/</guid>
+          <description xml:base="https://alimektor.github.io/blog/shebang/">&lt;p&gt;To execute a script file using an executable found in the &lt;code&gt;PATH&lt;&#x2F;code&gt; environment variable using the &lt;code&gt;env&lt;&#x2F;code&gt; executable, you must specify the absolute path to the env executable with the required interpreter argument on the first line of the script file:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env bash
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;python&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env python3
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;python&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env python2
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;perl&quot; class=&quot;language-perl &quot;&gt;&lt;code class=&quot;language-perl&quot; data-lang=&quot;perl&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env perl
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Important: the way to create shebang described here is portable. You can also use &lt;code&gt;#!&#x2F;bin&#x2F;bash&lt;&#x2F;code&gt;, but it may unfortunately not be available in some distributions.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</description>
+      </item>
+      <item>
+          <title>Cron in Scripts</title>
+          <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/cron-in-scripts/</link>
+          <guid>https://alimektor.github.io/blog/cron-in-scripts/</guid>
+          <description xml:base="https://alimektor.github.io/blog/cron-in-scripts/">&lt;h2 id=&quot;how-to-pass-a-task-to-cron-from-a-script&quot;&gt;How to Pass a Task to &lt;code&gt;cron&lt;&#x2F;code&gt; From a Script?&lt;&#x2F;h2&gt;
+&lt;p&gt;You can use the following script to do this in scripts:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;crontab -l &amp;gt; taskcron
+echo &amp;quot;* * * * * sometask&amp;quot; &amp;gt;&amp;gt; taskcron
+crontab taskcron
+rm taskcron
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+    </channel>
+</rss>

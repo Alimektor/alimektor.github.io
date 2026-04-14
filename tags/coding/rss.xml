@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Alimektor - coding</title>
+      <link>https://alimektor.github.io</link>
+      <description>This is a story not about how much time you have, it&#x27;s about how you use it.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://alimektor.github.io/tags/coding/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Shebang</title>
+          <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/shebang/</link>
+          <guid>https://alimektor.github.io/blog/shebang/</guid>
+          <description xml:base="https://alimektor.github.io/blog/shebang/">&lt;p&gt;To execute a script file using an executable found in the &lt;code&gt;PATH&lt;&#x2F;code&gt; environment variable using the &lt;code&gt;env&lt;&#x2F;code&gt; executable, you must specify the absolute path to the env executable with the required interpreter argument on the first line of the script file:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env bash
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;python&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env python3
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;python&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env python2
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;perl&quot; class=&quot;language-perl &quot;&gt;&lt;code class=&quot;language-perl&quot; data-lang=&quot;perl&quot;&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;env perl
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Important: the way to create shebang described here is portable. You can also use &lt;code&gt;#!&#x2F;bin&#x2F;bash&lt;&#x2F;code&gt;, but it may unfortunately not be available in some distributions.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</description>
+      </item>
+    </channel>
+</rss>

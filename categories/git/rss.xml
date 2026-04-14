@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Alimektor - Git</title>
+      <link>https://alimektor.github.io</link>
+      <description>This is a story not about how much time you have, it&#x27;s about how you use it.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://alimektor.github.io/categories/git/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 05 Mar 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Git Patch</title>
+          <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://alimektor.github.io/blog/git-patch/</link>
+          <guid>https://alimektor.github.io/blog/git-patch/</guid>
+          <description xml:base="https://alimektor.github.io/blog/git-patch/">&lt;p&gt;Git patches are text files that contain code and Git commit metadata.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;generate-a-git-patch-for-a-specific-commit&quot;&gt;Generate a Git Patch For a Specific Commit&lt;&#x2F;h2&gt;
+&lt;p&gt;Generate a patch for the HEAD commit:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git format-patch -1 HEAD
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Generate a patch for the HEAD commit with specified file name:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git format-patch -1 HEAD --output=head.patch
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Generate a patch for HEAD - &lt;code&gt;n&lt;&#x2F;code&gt; commits:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git format-patch -&amp;lt;n&amp;gt; HEAD
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Apply the patch with verbose:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git apply --verbose *.patch
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+    </channel>
+</rss>
