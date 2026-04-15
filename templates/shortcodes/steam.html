@@ -1,0 +1,38 @@
+<div class="steam-banner">
+    <a
+        href="https://store.steampowered.com/app/{{ app_id }}/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="steam-banner-link"
+    >
+        <div class="steam-banner-card">
+            {% if w %}
+            <img
+                src="{{ capsule }}"
+                alt="{{ title }}"
+                class="steam-banner-capsule"
+                loading="lazy"
+            />
+            {% else %}
+            <img
+                src="https://cdn.akamai.steamstatic.com/steam/apps/{{ app_id }}/header.jpg"
+                alt="{{ title }}"
+                class="steam-banner-capsule"
+                loading="lazy"
+            />
+            {% endif %}
+            <div class="steam-banner-info">
+                <h3 class="steam-banner-title">{{ title }}</h3>
+                {% if price %}
+                <span class="steam-banner-price">{{ price }}</span>
+                {% endif %} {% if tags %}
+                <div class="steam-banner-tags">
+                    {% for tag in tags | split(pat=", ") %}
+                    <span class="steam-banner-tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </a>
+</div>

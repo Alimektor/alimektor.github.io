@@ -1,0 +1,33 @@
+<div class="ozon-banner">
+    <a
+        href="https://www.ozon.ru/product/{{ product_id }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ozon-banner-link"
+    >
+        <div class="ozon-banner-card">
+            <img
+                src="{{ image }}"
+                alt="{{ title }}"
+                class="ozon-banner-image"
+                loading="lazy"
+            />
+            <div class="ozon-banner-info">
+                <h3 class="ozon-banner-title">{{ title }}</h3>
+                {% if price %}
+                <span class="ozon-banner-price">{{ price }}</span>
+                {% endif %}
+                {% if category %}
+                <span class="ozon-banner-category">{{ category }}</span>
+                {% endif %}
+                {% if tags %}
+                <div class="ozon-banner-tags">
+                    {% for tag in tags | split(pat=", ") %}
+                    <span class="ozon-banner-tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </a>
+</div>

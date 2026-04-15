@@ -1,0 +1,90 @@
+.steam-banner {
+  margin: 1.5rem 0;
+}
+
+.steam-banner-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.steam-banner-card {
+  display: flex;
+  gap: 1rem;
+  background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.steam-banner-capsule {
+  width: 184px;
+  min-height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.steam-banner-info {
+  padding: 0.75rem 0.75rem 0.75rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.steam-banner-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.3;
+
+  .dark & {
+    color: #ffffff;
+  }
+}
+
+.steam-banner-price {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #acdbf5;
+}
+
+.steam-banner-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.steam-banner-tag {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  color: #8f98a0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .steam-banner-card {
+    flex-direction: column;
+  }
+
+  .steam-banner-capsule {
+    width: 100%;
+    height: auto;
+  }
+
+  .steam-banner-info {
+    padding: 0.75rem;
+  }
+}
