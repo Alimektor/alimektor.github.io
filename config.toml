@@ -50,8 +50,8 @@ enable_footnotes = true
 comments_enabled = false
 
 # SEO metadata
-keywords = "platform automation, edge systems, applied security, open standards, Rust, DevOps, infrastructure"
-og_image = "og-default.png"
+keywords = "AI, DevOps, QA, Golang, Python, Dart, Flutter, Linux"
+og_image = "src/logo.png"
 
 [extra.social]
 github = "https://github.com/alimektor"
