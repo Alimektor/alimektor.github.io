@@ -11,9 +11,9 @@ This is a wishlist for 🥳My Birthday, 🎄Happy New Year, or 💸some donation
 ### Valve ###
 
 - ✨✨✨ (Planned for 2027) [Steam Frame](https://store.steampowered.com/sale/steamframe) — I want to get rid of my Quest 3, please.
-- (Planned for 2027) [Steam Machine](https://store.steampowered.com/sale/steammachine)
-- (Planned for 2027) [Steam Controller](https://store.steampowered.com/sale/steamcontroller)
-- (Planned for 2027-2028) Steam Deck 2
+- (Planned for 2027) [Steam Machine](https://store.steampowered.com/sale/steammachine).
+- (Planned for 2027) [Steam Controller](https://store.steampowered.com/sale/steamcontroller).
+- (Planned for 2027-2028) Steam Deck 2.
 
 ### Anbernic ###
 
@@ -39,3 +39,9 @@ This is a wishlist for 🥳My Birthday, 🎄Happy New Year, or 💸some donation
 {{ steam(app_id="2240620", title="UNBEATABLE", price="1100 RUB ", tags="Rhythm, Music, Anime") }}
 {{ steam(app_id="1783560", title="The Last Caretaker", price="1100 RUB ", tags="Simulation, Survival, Sci-fi") }}
 {{ steam(app_id="1911610", title="Windblown", price="1100 RUB ", tags="Co-Op, Roguelite, Hash and Slash") }}
+
+## Miscellaneous ##
+
+
+- Kubotan.
+
