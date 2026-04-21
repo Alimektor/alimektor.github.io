@@ -39,9 +39,10 @@ This is a wishlist for 🥳My Birthday, 🎄Happy New Year, or 💸some donation
 {{ steam(app_id="2240620", title="UNBEATABLE", price="1100 RUB ", tags="Rhythm, Music, Anime") }}
 {{ steam(app_id="1783560", title="The Last Caretaker", price="1100 RUB ", tags="Simulation, Survival, Sci-fi") }}
 {{ steam(app_id="1911610", title="Windblown", price="1100 RUB ", tags="Co-Op, Roguelite, Hash and Slash") }}
+{{ steam(app_id="1663850", title="REPLACED", price="710 RUB ", tags="Soulslike, 2D, Pixel") }}
+
 
 ## Miscellaneous ##
-
 
 - Kubotan.
 
