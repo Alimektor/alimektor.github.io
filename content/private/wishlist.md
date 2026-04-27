@@ -34,7 +34,6 @@ This is a wishlist for 🥳My Birthday, 🎄Happy New Year, or 💸some donation
 
 #### Miscellaneous ####
 
-{{ steam(app_id="3105440", title="Heroes of Might and Magic: Olden Era", price="Uknown Price ", tags="Strategy, Turn-Based, Tactical") }}
 {{ steam(app_id="686060", title="Mewgenics", price="1100 RUB ", tags="Roguelite, Turn-Based, Dark Humor") }}
 {{ steam(app_id="2240620", title="UNBEATABLE", price="1100 RUB ", tags="Rhythm, Music, Anime") }}
 {{ steam(app_id="1783560", title="The Last Caretaker", price="1100 RUB ", tags="Simulation, Survival, Sci-fi") }}
