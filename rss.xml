@@ -141,42 +141,6 @@
 &lt;h4 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;&#x2F;h4&gt;
 &lt;p&gt;&lt;div class=&quot;steam-banner&quot;&gt;
     &lt;a
-        href=&quot;https:&#x2F;&#x2F;store.steampowered.com&#x2F;app&#x2F;3105440&#x2F;&quot;
-        target=&quot;_blank&quot;
-        rel=&quot;noopener noreferrer&quot;
-        class=&quot;steam-banner-link&quot;
-    &gt;
-        &lt;div class=&quot;steam-banner-card&quot;&gt;
-            
-            &lt;img
-                src=&quot;https:&#x2F;&#x2F;cdn.akamai.steamstatic.com&#x2F;steam&#x2F;apps&#x2F;3105440&#x2F;header.jpg&quot;
-                alt=&quot;Heroes of Might and Magic: Olden Era&quot;
-                class=&quot;steam-banner-capsule&quot;
-                loading=&quot;lazy&quot;
-            &#x2F;&gt;
-            
-            &lt;div class=&quot;steam-banner-info&quot;&gt;
-                &lt;h3 class=&quot;steam-banner-title&quot;&gt;Heroes of Might and Magic: Olden Era&lt;&#x2F;h3&gt;
-                
-                &lt;span class=&quot;steam-banner-price&quot;&gt;Uknown Price &lt;&#x2F;span&gt;
-                 
-                &lt;div class=&quot;steam-banner-tags&quot;&gt;
-                    
-                    &lt;span class=&quot;steam-banner-tag&quot;&gt;Strategy&lt;&#x2F;span&gt;
-                    
-                    &lt;span class=&quot;steam-banner-tag&quot;&gt;Turn-Based&lt;&#x2F;span&gt;
-                    
-                    &lt;span class=&quot;steam-banner-tag&quot;&gt;Tactical&lt;&#x2F;span&gt;
-                    
-                &lt;&#x2F;div&gt;
-                
-            &lt;&#x2F;div&gt;
-        &lt;&#x2F;div&gt;
-    &lt;&#x2F;a&gt;
-&lt;&#x2F;div&gt;
-
-&lt;div class=&quot;steam-banner&quot;&gt;
-    &lt;a
         href=&quot;https:&#x2F;&#x2F;store.steampowered.com&#x2F;app&#x2F;686060&#x2F;&quot;
         target=&quot;_blank&quot;
         rel=&quot;noopener noreferrer&quot;
