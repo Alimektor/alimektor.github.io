@@ -26,6 +26,10 @@ This is a wishlist for 🥳My Birthday, 🎄Happy New Year, or 💸some donation
 
 - Flipper One
 
+### Apple ###
+
+- Apple MacBook Pro 14" / M5 Pro 15-Core / GPU 16-Core / 24 Gb RAM / 1TB SSD
+
 ## Games ##
 
 ### Steam ###
