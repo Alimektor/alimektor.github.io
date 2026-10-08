@@ -10,8 +10,8 @@ This is a wishlist for 🥳My Birthday, 🎄Happy New Year, or 💸some donation
 
 ### Valve ###
 
-- ✨✨✨ (Planned for 2027) [Steam Frame](https://store.steampowered.com/sale/steamframe) — I want to get rid of my Quest 3, please.
-- (Planned for 2027) [Steam Machine](https://store.steampowered.com/sale/steammachine).
+- [Steam Frame](https://store.steampowered.com/sale/steamframe) — I want to get rid of my Quest 3, please.
+- [Steam Machine](https://store.steampowered.com/sale/steammachine).
 - [Steam Controller](https://store.steampowered.com/sale/steamcontroller).
 - (Planned for 2027-2028) Steam Deck 2.
 
@@ -28,7 +28,7 @@ This is a wishlist for 🥳My Birthday, 🎄Happy New Year, or 💸some donation
 
 ### Apple ###
 
-- Apple MacBook Pro 14" / M5 Pro 15-Core / GPU 16-Core / 24 Gb RAM / 1TB SSD
+- Apple MacBook Pro 16" / M5 Max / 18-core CPU 40-core GPU / 128 GB RAM / 4 TB SSD
 
 ## Games ##
 
@@ -51,8 +51,9 @@ This is a wishlist for 🥳My Birthday, 🎄Happy New Year, or 💸some donation
 {{ steam(app_id="1911610", title="Windblown", price="1100 RUB ", tags="Co-Op, Roguelite, Hash and Slash") }}
 {{ steam(app_id="1663850", title="REPLACED", price="710 RUB ", tags="Soulslike, 2D, Pixel") }}
 
+## Cool stuff ##
 
-## Miscellaneous ##
-
+- NEO CEDAR King Size (200 pieces)
+- Casio F-91W Watch
 - Kubotan.
 
